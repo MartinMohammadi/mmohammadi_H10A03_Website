@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container,
+.AboutContainer,
+.ServiceContainer,
+.ContactContainer,
+.ReviewContainer,
+.AvailabilityContainer {
+    width: 100%;
+    height: 180vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    height: 325vh;
+}
+
+.ContactContainer {
+    height: 200vh
+}
+
+.ReviewContainer{
+    height: 275vh;
+}
+
+.contactFromContainer {
+    background-color: rgba(0, 0, 0, .5);
+    width: 85%;
+    margin: 0 auto 2vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0.5rem;
+
+}
+
+.AvailabilityContainer{
+    height: 225vh;
+}
+
+.AboutContainer {
+    height: 400vh;
+}
+
+.ServiceContainer {
+    height: 250vh;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/mustangbg.jpg);
+}
+
+.AboutContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../images/water-with-blue-foam.avif);
+}
+
+.ServiceContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(../images/sideporshewash.jpg);
+}
+
+.ContactContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/contactuscar.jpg);
+}
+
+.AvailabilityContainer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(../images/car-wash-detailing.avif);
+    background-repeat: no-repeat;
+}
+
+.ReviewContainer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url(../images/carwashnice.jpg);
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    flex-direction: column;
+}
+
+.nav-container ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2vh;
+    margin-top: 4vh;
+}
+
+.logo-img-container {
+    text-align: center;
+    display: flex;
+}
+
+img {
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#logo-img {
+    width: 125px;
+}
+
+main ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.aboutUsContent section:nth-of-type(3) img{
+    border-radius: 30px;
+    height: 200px;
+    width: 175px;
+    box-shadow: 0 0 20px #702670;
+}
+
+.aboutUsContent section{
+    margin: 40px;
+}
+
+.aboutUsContent section h2{
+    padding: 25px;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #BC13FE;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+main nav ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    transform: translateY(-10%);
+    color: #fff;
+}
+
+.ReviewContent {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    transform: translateY(-10%);
+    color: #fff;
+    margin: auto;
+}
+
+.ReviewContent section{
+    margin: 60px;
+    padding: 50px;
+    text-align: left;
+    border: #fff solid 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #502c7f;
+}
+
+.ReviewContent section h2, .aboutUsContent section h2{
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 10px #BC13FE;
+}
+
+.ReviewContent section p:first-of-type, .ReviewContent section p:nth-of-type(2), .aboutUsContent section p{
+    margin-bottom: 5px;
+    border: #fff solid 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #502c7f;
+    padding: 15px;
+}
+
+.aboutUsContent {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    transform: translateY(-10%);
+    color: #fff;
+    margin-top: 30px;
+}
+
+.aboutUsContent section h3{
+    margin: 15px;
+}
+
+.aboutUsContent section:nth-of-type(3) p{
+    margin: 30px;
+}
+
+.aboutUsContent section:nth-of-type(3) h2{
+    text-decoration: underline solid;
+}
+
+.AvailabilityContent {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    transform: translateY(-10%);
+    color: #fff;
+    font-size: 20px;
+}
+.AvailabilityContent p{
+    margin: auto 50px;
+    border: solid 3px #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00cfc8;
+}
+
+.AvailabilityContent div table{
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 30px;
+    border: solid 3px #fff;
+    box-shadow: 0 0 10px #00cfc8;
+}
+
+.AvailabilityContent div table caption{
+    margin-bottom: 10px;
+}
+
+.AvailabilityContent div table th, td{
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 7px;
+    /* display: inline; */
+}
+
+.contactContent {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    transform: translateY(-10%);
+    color: #fff;
+}
+
+.contactContent input[type=text]{
+    margin-top: 10px;
+}
+
+.servicePackages {
+    display: flex;
+    margin: auto;
+}
+
+
+
+.content div:first-of-type, .content div:nth-of-type(2){
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border: #fff solid 3px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content div p:first-of-type, .content div p:nth-of-type(2){
+    text-align: left;
+}
+
+.content div #neonStart {
+    width: 175px;
+    display: inline;
+    float: left;
+    padding-right: 10px;
+}
+
+.content div #neonNow {
+    width: 175px;
+    display: inline;
+    float: right;
+}
+
+.contactContent a {
+    color: #00cfc8;
+}
+
+.contactContent fieldset {
+    margin-top: 4vh;
+}
+
+.contactContent h2:nth-of-type(2) {
+    margin-top: 70px;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    border-radius: 30px;
+    text-decoration: underline;
+    text-decoration-color: #00cfc8;
+    color: white;
+}
+
+.contactContent select {
+    font-family: sans-serif;
+    color: #00cfc8;
+    border-radius: 30px;
+    color: black;
+}
+
+form {
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}
+
+.ContactText {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #00cfc8;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content div p {
+    margin: 50px auto;
+    font-weight: 100;
+    line-height: 25px;
+    padding: 25px;
+}
+
+
+.ServicesContent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.ServicesContent div {
+    width: 70%;
+    margin: 10vh auto;
+    border: 2px solid white;
+    box-shadow: 0 0 20px #00cfc8;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.ServicesContent div table caption{
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-shadow: 0 0 20px #00cfc8;
+}
+
+.ServicesContent div table tr th{
+    font-weight: bold;
+    text-shadow: 0 0 30px #00cfc8;
+}
+
+
+#actions input[type="submit"] {
+    margin: 20px;
+    border: 2px solid #00cfc8;
+    border-radius: 5px;
+    color: white;
+    padding: .5rem;
+    background-color: transparent;
+}
+
+
+nav ul li:last-child {
+    display: none;
+}
+
+nav ul li:nth-of-type(2) {
+    display: none;
+}
+
+nav ul li:nth-of-type(3) {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .nav-container ul {
+        display: flex;
+    }
+
+    .contactContent {
+        margin-top: -150px;
+    }
+
+
+
+    .content {
+        transform: translateY(-30%);
+    }
+
+    .container {
+        width: 100%;
+        height: 150vh;
+    }
+
+
+    div h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+
+    nav ul li:last-child {
+        display: none;
+    }
+
+    nav ul li:nth-of-type(2) {
+        display: none;
+    }
+
+    .content div p {
+        margin: 50px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    .contactFromContainer {
+        margin-top: 10vh;
+        width: 35%;
+    }
+
+    nav ul li:nth-of-type(3),
+    nav ul li:nth-of-type(2),
+    nav ul li:last-child {
+        display: inline-block;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    .ContactContainer {
+        height: 190vh;
+    }
+
+    .AboutContainer {
+        height: 375vh;
+    }
+
+    .content div:first-of-type, .content div:nth-of-type(2){
+        width: 80%;
+    }
+    
+    .content div p:first-of-type, .content div p:nth-of-type(2){
+        text-align: left;
+        margin: auto;
+    }
+    
+    .content div #neonStart {
+        width: 160px;
+        display: inline;
+        float: left;
+    }
+    
+    .content div #neonNow {
+        width: 160px;
+        display: inline;
+        float: right;    
+    }
+
+    .AvailabilityContainer{
+        height: 175vh;
+    }
+
+    .AvailabilityContent p{
+        margin: auto 100px;
+        border: solid 3px #fff;
+        padding: 50px;
+        border-radius: 20px;
+    }
+
+    .ServiceContainer {
+        height: 150vh;
+    }
+
+    .ReviewContainer{
+        height: 190vh;
+    }
+
+    .ReviewContent section{
+        margin: 60px;
+        padding: 50px;
+    }
+    
+    .ReviewContent section h2{
+        margin-bottom: 15px;
+    }
+    
+    .ReviewContent section p:first-of-type, .ReviewContent section p:nth-of-type(2){
+        margin-bottom: 25px;
+        padding: 15px;
+        margin: 40px;
+    }
+
+    .aboutUsContent section:nth-of-type(3) p{
+        margin: 40px;
+    }
+
+}

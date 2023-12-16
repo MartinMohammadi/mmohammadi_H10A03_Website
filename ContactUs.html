@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./Styles/site.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-car-64.png">
+</head>
+
+<body>
+
+    <div class="ContactContainer">
+        <main>
+            <nav class="nav-container">
+                <div class="logo-img-container">
+                    <img src="./images/waterbanner.png" id="logo-img" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                    <li><a href="./Reviews.html">Reviews</a></li>
+                    <li><a href="./ContactUs.html">Give Us A Call!</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Availability.html">Our Availability</a></li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+    <div class="contactContent">
+        <div class="contactFromContainer">
+            <h2 class="ContactText">How to reach us</h2>
+            <p class="ContactText">To reach us via email, <a href="mailto:2376084@cegep-heritage.com">Email Us</a>!
+            </p>
+            <p class="ContactText">If you have any concerns or need assistance, <a href="tel:8195765345">Click to
+                    call a
+                    customer support rep.</a></p>
+            <h2>Unhappy? Let us Know</h2>
+            <form action="ContactUs.html" method="get">
+                <div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" size="30" maxlength="30">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" size="30" maxlength="60">
+                    </div>
+
+                </div>
+
+
+                <fieldset>
+                    <legend>
+                        What Problems are you Experiencing?
+                    </legend>
+                    <input type="checkbox" name="minor" id="minor">
+                    <label for="minor">Minor Interior Damage</label>
+                    <br>
+                    <input type="checkbox" name="major" id="major">
+                    <label for="major">Major Interior Damage</label>
+                    <br>
+                    <input type="checkbox" name="minorext" id="minorext">
+                    <label for="minorext">Minor Exterior Damage</label>
+                    <br>
+                    <input type="checkbox" name="majorext" id="majorext">
+                    <label for="majorext">Major Exterior Damage</label>
+                    <br>
+                    <input type="checkbox" name="noGood" id="noGood">
+                    <label for="noGood">Not Sarisfactory</label>
+                    <br>
+                    <input type="checkbox" name="missing" id="missing">
+                    <label for="missing">Missing Valuable</label>
+                    <br>
+                    <input type="checkbox" name="other" id="other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        When Did This Happen?
+                    </legend>
+                    <input type="radio" id="day" name="time">
+                    <label for="day">A Day Ago</label>
+                    <br>
+                    <input type="radio" id="lessweek" name="time">
+                    <label for="lessweek">Less Than A Week Ago</label>
+                    <br>
+                    <input type="radio" id="week" name="time">
+                    <label for="week">A Week Ago</label>
+                    <br>
+                    <input type="radio" id="lessmonth" name="time">
+                    <label for="lessmonth">Less Than A Month Ago</label>
+                    <br>
+                    <input type="radio" id="Other" name="time">
+                    <label for="Other">Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        We'll Make It Up To You!
+                    </legend>
+                    <select name="request" id="request">
+                        <option value="">--Select One--</option>
+                        <option value="refund">Refund</option>
+                        <option value="rebook">Rebook</option>
+                        <option value="free">Free Carwash</option>
+                        <option value="discount">Discout For You and Family</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Tell us What Happened Specifically</legend>
+                    <textarea name="event" id="event" cols="30" rows="4"></textarea>
+                </fieldset>
+                <div id="actions">
+                    <input type="submit" value="Submit Complaint">
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Reviews.html">Reviews</a></li>
+                <li><a href="./ContactUs.html">Contact Us</a></li>
+                <li><a href="./Service.html">Services</a></li>
+                <li><a href="./Availability.html">Our Availability</a></li>
+            </ul>
+        </nav>
+        <p>COPYRIGHT &copy;, 2023 ShinPro Auto - ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+
+</html>
