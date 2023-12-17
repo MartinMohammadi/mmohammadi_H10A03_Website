@@ -50,7 +50,7 @@
 }
 
 .ServiceContainer {
-    height: 250vh;
+    height: 350vh;
 }
 
 .container {
@@ -278,8 +278,6 @@ main nav ul li:hover::after {
     margin: auto;
 }
 
-
-
 .content div:first-of-type, .content div:nth-of-type(2){
     width: 80%;
     margin: auto;
@@ -413,6 +411,11 @@ h1 {
     align-items: center;
 }
 
+.ServicesContent h3{
+    text-decoration: underline;
+    text-shadow: 0 0 10px #00cfc8;
+}
+
 .ServicesContent div table caption{
     font-weight: bold;
     margin-bottom: 20px;
@@ -425,6 +428,23 @@ h1 {
     text-shadow: 0 0 30px #00cfc8;
 }
 
+.ServicesContent ul li a{
+    
+    text-decoration: none;
+    color: #00cfc8;
+
+}
+
+.ServicesContent ul li{
+    text-align: left;
+    margin: 0;
+    padding: 36px 0 36px 84px;
+    list-style: none;
+    background-image: url(../images/icons8-car-64.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
 
 #actions input[type="submit"] {
     margin: 20px;
@@ -546,7 +566,7 @@ nav ul li:nth-of-type(3) {
     }
 
     .ServiceContainer {
-        height: 150vh;
+        height: 250vh;
     }
 
     .ReviewContainer{
